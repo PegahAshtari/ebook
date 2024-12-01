@@ -1,0 +1,93 @@
+@font-face {
+    font-family: BYekan;
+    src: url(../fonts/BYekan+.ttf);
+}
+
+body {
+    font-family: BYekan;
+    background-image: url(../images/bgi1.jpg);
+}
+
+.header-links {
+    color: #fff;
+    font-size: 14px;
+}
+
+.header-links:hover {
+    color: #ff5607;
+    transition: all 0.4s ease-in-out;
+}
+
+#download-btn {
+    font-size: 18px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+#intro-sec {
+    color: #fff;
+}
+
+#the-h1 {
+    margin-top: 10rem;
+    font-size: 84px;
+}
+
+#the-h2 {
+    font-size: 54px;
+}
+
+#first-text {
+    font-size: 44px;
+}
+
+#divider {
+    display: inline-block;
+    height: 4px;
+    width: 10%;
+    background-color: #ff5607;
+    
+}
+
+#download-btn2 {
+    color: #fff;
+    background-color: #ff5607;
+    font-size: 18px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+#download-btn2:hover {
+    color: #1b1b1b;
+    background-color: #fff;
+    transition: all 0.4s ease-in-out;
+}
+
+.light-boxes {
+    color: #fff;
+    background-color: #ff8045;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    padding: 30px;
+}
+
+.dark-boxes {
+    color: #fff;
+    background-color: #ff5607;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    padding: 30px;
+}
+
+.divider-2 {
+    display: inline-block;
+    height: 4px;
+    width: 20%;
+    background-color: #fff; 
+}
