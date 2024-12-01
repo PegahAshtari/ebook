@@ -12,7 +12,7 @@ body {
     background-position: center;
 }
 
-p, h1, h2, h3 {
+p, h1, h2, h3, h4, h5 {
     margin-bottom: 0px;
 }
 
@@ -123,4 +123,18 @@ p, h1, h2, h3 {
 #writer {
     color: #ff5607;
     font-size: 24px;
+}
+
+#fourth-section {
+    background-image: url(../images/bgi3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.check-icons {
+    font-size: 40px;
+    color: #ff5607;
 }
