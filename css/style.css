@@ -138,3 +138,23 @@ p, h1, h2, h3, h4, h5 {
     font-size: 40px;
     color: #ff5607;
 }
+
+#ebooks {
+    background-image: url(../images/bgi4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+}
+
+.book-name {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.book-name:hover {
+    color: #ff5607;
+    transition: all 0.4s ease-in-out;
+}
