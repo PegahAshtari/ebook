@@ -12,7 +12,7 @@ body {
     background-position: center;
 }
 
-p, h1, h2, h3, h4, h5 {
+p, h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0px;
 }
 
@@ -172,12 +172,13 @@ p, h1, h2, h3, h4, h5 {
     color: #888;
 }
 
-#seventh-section {
+#FAQs {
     padding: 7rem 3rem;
+    background-color: #131313;
 }
 
 .accordion-item, .accordion-button {
-    background-color: #000000;
+    background-color: #131313;
 }
 
 .accordion-button {
@@ -188,11 +189,68 @@ p, h1, h2, h3, h4, h5 {
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: #000000;
+    background-color: #131313;
     color: #ff5607;
     box-shadow: none;
 }
 
 .accordion-flush>.accordion-item>.accordion-header .accordion-button, .accordion-flush>.accordion-item>.accordion-header .accordion-button.collapsed {
     box-shadow: none;
+}
+
+footer {
+    background-color: #131313;
+}
+
+#input-text {
+    color: #fff;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+input {
+    width: 100%;
+    max-width: 100%;
+    min-width: 50px;
+    padding: 13px 40px;
+}
+
+#submit-btn {
+    background-color: #ff5607;
+    color: #fff;
+    padding: 15px 40px;
+}
+
+#submit-btn:hover {
+    background-color: #131313;
+}
+
+#footer-divider {
+    color: #999;
+}
+
+.social-icons {
+    font-size: 32px;
+    color: #fff;
+}
+
+.social-icons:hover {
+    color: #ff5607;
+    transition: all 0.4s ease-in-out;
+}
+
+#copyright {
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.policies {
+    text-decoration: none;
+    color: #ff5607;
+}
+
+.policies:hover {
+    color: #fff;
+    transition: all 0.4s ease-in-out;
 }
