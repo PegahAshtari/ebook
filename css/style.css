@@ -57,7 +57,7 @@ p, h1, h2, h3, h4, h5 {
     
 }
 
-#download-btn2 {
+.orange-btn {
     color: #fff;
     background-color: #ff5607;
     font-size: 18px;
@@ -65,7 +65,7 @@ p, h1, h2, h3, h4, h5 {
     padding-right: 4rem;
 }
 
-#download-btn2:hover {
+.orange-btn:hover {
     color: #1b1b1b;
     background-color: #fff;
     transition: all 0.4s ease-in-out;
@@ -76,7 +76,6 @@ p, h1, h2, h3, h4, h5 {
     background-color: #ff8045;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 40px;
     align-items: center;
     padding: 30px;
@@ -87,7 +86,6 @@ p, h1, h2, h3, h4, h5 {
     background-color: #ff5607;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 40px;
     align-items: center;
     padding: 30px;
@@ -158,3 +156,18 @@ p, h1, h2, h3, h4, h5 {
     color: #ff5607;
     transition: all 0.4s ease-in-out;
 }
+
+#orange-btn2 {
+    width: 180px;
+}
+
+.about-us-icons {
+    font-size: 50px;
+    color: #ff5607;
+}
+
+    .about-us-text {
+        font-size: 18px;
+        font-weight: 300;
+        color: #888;
+    }
