@@ -38,11 +38,11 @@
         <section>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 text-center">
+                    <div class="col-md-6 d-none d-md-block text-center">
                         <img src="./images/img1.webp" alt="book" class="float-end mt-5">
                     </div>
                     <div class="col-md-6" id="intro-sec">
-                        <div class="ms-5 p-5">
+                        <div class="ms-5 p-5" id="mobile-intro-sec">
                             <div>
                                 <h1 id="the-h1">Building</h1>
                             </div>
@@ -57,7 +57,7 @@
                             </div>
                             <span id="divider" class="my-4"></span>
                             <p class="mt-2">Running an affiliate store is not the rocket building. Get this free guide and earn a fortune selling website templates online</p>
-                            <a href="#" class="btn py-3 my-4 orange-btn">دانلود</a>
+                            <a href="#" class="btn py-3 my-4 orange-btn" id="dl-btn2">دانلود</a>
                         </div>
                     </div>
                 </div>
@@ -242,7 +242,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3 d-flex align-items-center flex-column gap-5">
+                <div class="col-md-3 d-flex align-items-center flex-column gap-5 about-us-cards">
                     <div>
                         <i class="fa fa-bookmark about-us-icons" aria-hidden="true"></i>
                     </div>
@@ -251,7 +251,7 @@
                         <p class="about-us-text">صاحبان شرکت های کوچک برای توسعه کسب و کار خود برای دستیابی به موفقیت به راهنماهای روشنی نیاز دارند.</p>
                     </div>
                 </div>
-                <div class="col-md-3 d-flex align-items-center flex-column gap-5">
+                <div class="col-md-3 d-flex align-items-center flex-column gap-5 about-us-cards">
                     <div>
                         <i class="fa fa-briefcase about-us-icons" aria-hidden="true"></i>
                     </div>
@@ -260,7 +260,7 @@
                         <p class="about-us-text">فناوری ها سریعتر از همیشه در حال توسعه هستند و شرکت ها باید از آنها پیروی کنند.</p>
                     </div>
                 </div>
-                <div class="col-md-3 d-flex align-items-center flex-column gap-5">
+                <div class="col-md-3 d-flex align-items-center flex-column gap-5 about-us-cards">
                     <div>
                         <i class="fa fa-users about-us-icons" aria-hidden="true"></i>
                     </div>
@@ -328,8 +328,8 @@
     </section>
 
     <footer>
-        <div class="container-fluid p-5">
-            <div class="row d-flex align-items-center justify-content-between">
+        <div class="container-fluid p-5" id="whole-footer">
+            <div class="row d-flex align-items-center justify-content-between" id="footer-part1">
                 <div class="col-md-6 order-2 order-md-1">
                     <div>
                         <h6 class="mb-4" id="input-text">وبلاگ کسب و کار من را دنبال کنید</h6>
@@ -346,7 +346,7 @@
                 </div>
             </div>
             <hr class="mx-5 my-4" id="footer-divider">
-            <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex justify-content-between align-items-center" id="footer-part2">
                 <div class="d-flex gap-3">
                     <a href="#"><i class="fab fa-pinterest social-icons" aria-hidden="true"></i></a>
                     <a href="#"><i class="fab fa-youtube social-icons" aria-hidden="true"></i></a>
