@@ -215,15 +215,18 @@ p, h1, h2, h3, h4, h5, h6 {
     font-weight: lighter;
   }
   
-  /* تغییر به علامت منفی هنگام باز شدن */
   .accordion-button:not(.collapsed)::before {
-    content: "-"; /* علامت منفی برای حالت باز */
+    content: "-";
     font-size: 40px;
     transition: transform 0.4s ease;
   }
 
 footer {
     background-color: #131313;
+}
+
+#whole-footer {
+    padding: 5rem;
 }
 
 #input-text {
@@ -291,6 +294,25 @@ input:active {
 
 .policies:hover {
     color: #fff;
+    transition: all 0.4s ease-in-out;
+}
+
+#scrollToTop {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    display: none;
+    cursor: pointer;
+}
+
+#scrollToTop:hover {
+    background-color: #1b1b1b;
     transition: all 0.4s ease-in-out;
 }
 
