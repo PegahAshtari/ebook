@@ -173,7 +173,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 #FAQs {
-    padding: 7rem 3rem;
+    padding: 8rem 3rem;
     background-color: #131313;
 }
 
@@ -181,12 +181,6 @@ p, h1, h2, h3, h4, h5, h6 {
     background-color: #131313;
 }
 
-.accordion-button {
-    color: #ff5607;
-    font-size: 24px;
-    font-weight: 300;
-    padding: 3rem;
-}
 
 .accordion-button:not(.collapsed) {
     background-color: #131313;
@@ -197,6 +191,36 @@ p, h1, h2, h3, h4, h5, h6 {
 .accordion-flush>.accordion-item>.accordion-header .accordion-button, .accordion-flush>.accordion-item>.accordion-header .accordion-button.collapsed {
     box-shadow: none;
 }
+
+.accordion-button::after {
+    display: none;
+  }
+  
+  .accordion-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 1.5rem;
+    color: #ff5607;
+  }
+  
+  .accordion-button::before {
+    content: "+";
+    font-size: 40px;
+    transition: transform 0.4s ease;
+    color: #00bbd0;
+    font-weight: lighter;
+  }
+  
+  /* تغییر به علامت منفی هنگام باز شدن */
+  .accordion-button:not(.collapsed)::before {
+    content: "-"; /* علامت منفی برای حالت باز */
+    font-size: 40px;
+    transition: transform 0.4s ease;
+  }
 
 footer {
     background-color: #131313;
@@ -212,17 +236,30 @@ input {
     width: 100%;
     max-width: 100%;
     min-width: 50px;
-    padding: 13px 40px;
+    padding: 15px 24px;
+    border: 1px solid #f8f8f8;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+}
+
+input:focus,
+input:active {
+    outline: none;
+    box-shadow: none;
 }
 
 #submit-btn {
     background-color: #ff5607;
     color: #fff;
     padding: 15px 40px;
+    border: 2px solid transparent;
+    transition: all 0.4s ease-in-out;
 }
 
 #submit-btn:hover {
-    background-color: #131313;
+    background-color: transparent;
+    border: 2px solid #fff;
+    transition: all 0.4s ease-in-out;
 }
 
 #footer-divider {
@@ -230,7 +267,7 @@ input {
 }
 
 .social-icons {
-    font-size: 32px;
+    font-size: 22px;
     color: #fff;
 }
 
@@ -243,6 +280,8 @@ input {
     color: #fff;
     font-weight: 300;
     font-size: 14px;
+    direction: ltr;
+    text-align: left;
 }
 
 .policies {
