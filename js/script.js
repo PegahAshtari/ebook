@@ -1,5 +1,4 @@
 window.onload = function () {
-    // شمارش معکوس برای هر عدد
     function startCountdown(id, targetNumber) {
         let currentNumber = 0;
         const element = document.getElementById(id);
@@ -11,15 +10,15 @@ window.onload = function () {
             } else {
                 clearInterval(interval);
             }
-        }, 0.5); // زمان بین هر افزایش (برای سرعت بالاتر می‌توانید مقدار 10 را تغییر دهید)
+        }, 0.5);
     }
 
-    // شمارش معکوس برای هر بخش
-    startCountdown('countdown-1', 3); // عدد 3 برای بخش اول
-    startCountdown('countdown-2', 170000); // عدد 170000 برای بخش دوم
-    startCountdown('countdown-3', 86); // عدد 86 برای بخش سوم
-    startCountdown('countdown-4', 700); // عدد 700 برای بخش چهارم
+    startCountdown('countdown-1', 3);
+    startCountdown('countdown-2', 170000);
+    startCountdown('countdown-3', 86);
+    startCountdown('countdown-4', 700);
 };
+
 
 window.onscroll = function () {
     let scrollToTopBtn = document.getElementById("scrollToTop");
@@ -30,9 +29,19 @@ window.onscroll = function () {
     }
 };
 
-
 document.getElementById("scrollToTop").addEventListener("click", function () {
     document.getElementById("top-view").scrollIntoView({
         behavior: "smooth"
     });
+});
+
+
+const submitButton = document.getElementById('submit-btn');
+const emailInput = document.getElementById('email-input');
+
+submitButton.addEventListener('click', function (event) {
+    event.preventDefault();
+    const email = emailInput.value;
+    console.log('Email entered:', email);
+    emailInput.value = "";
 });
