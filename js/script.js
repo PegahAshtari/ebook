@@ -1,23 +1,23 @@
-window.onload = function () {
-    function startCountdown(id, targetNumber) {
-        let currentNumber = 0;
-        const element = document.getElementById(id);
+// window.onload = function () {
+//     function startCountdown(id, targetNumber) {
+//         let currentNumber = 0;
+//         const element = document.getElementById(id);
 
-        const interval = setInterval(() => {
-            if (currentNumber < targetNumber) {
-                currentNumber++;
-                element.textContent = currentNumber;
-            } else {
-                clearInterval(interval);
-            }
-        }, 0.5);
-    }
+//         const interval = setInterval(() => {
+//             if (currentNumber < targetNumber) {
+//                 currentNumber++;
+//                 element.textContent = currentNumber;
+//             } else {
+//                 clearInterval(interval);
+//             }
+//         }, 0.5);
+//     }
 
-    startCountdown('countdown-1', 3);
-    startCountdown('countdown-2', 170000);
-    startCountdown('countdown-3', 86);
-    startCountdown('countdown-4', 700);
-};
+//     startCountdown('countdown-1', 3);
+//     startCountdown('countdown-2', 170000);
+//     startCountdown('countdown-3', 86);
+//     startCountdown('countdown-4', 700);
+// };
 
 
 window.onscroll = function () {

@@ -32,6 +32,10 @@ p, h1, h2, h3, h4, h5, h6 {
     padding-right: 4rem;
 }
 
+#mobile-panel {
+    visibility: hidden;
+}
+
 #intro-sec {
     color: #fff;
 }
@@ -316,10 +320,35 @@ input:active {
     transition: all 0.4s ease-in-out;
 }
 
-@media all and (max-width: 728px) {
+@media all and (max-width: 992px) {
     body {
         overflow-x: hidden;
     }
+
+    nav {
+        margin-top: 40px;
+        flex-direction: column;
+    }
+
+    #mobile-panel {
+        visibility: visible;
+        height: 50px;
+        background: #fff;
+        border-bottom: 1px solid #ececee;
+        padding: 10px 20px 10px 10px;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    #ham-menu {
+        background-color: #ff4500;
+    }
+
+    .navbar-brand {
+        margin-bottom: 20px;
+    }
+
     #mobile-intro-sec {
         margin-right: 0 !important;
         padding: 0 !important;
@@ -347,7 +376,7 @@ input:active {
     }
 
     .about-us-cards {
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
 
     #whole-footer {
@@ -367,5 +396,13 @@ input:active {
         flex-wrap: wrap;
         flex-direction: column-reverse;
         gap: 30px;
+    }
+
+    #footer-logo {
+        text-align: center;
+    }
+
+    #input-text {
+        text-align: center; 
     }
 }

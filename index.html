@@ -12,9 +12,17 @@
 <body>
     <div id="top-view">
         <header class="py-4">
+            <div class="container-fluid d-flex align-items-center justify-content-between position-fixed" id="mobile-panel">
+                <button class="btn">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+                    <span class="navbar-toggler-icon" id="ham-menu"></span>
+                </button>
+            </div>
             <div class="container">
                 <nav class="navbar navbar-expand-lg justify-content-between align-items-center">
-                    <div class="d-flex justify-content-center align-items-center gap-4">
+                    <div class="d-flex justify-content-center align-items-center gap-4 order-2 order-lg-1">
                         <button type="button" class="btn btn-outline-light py-3" id="download-btn">دانلود</button>
                         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div class="navbar-nav">
@@ -25,12 +33,10 @@
                             </div>
                         </div>
                     </div>
-                    <a class="navbar-brand mx-0" href="#">
+                    <a class="navbar-brand mx-0 order-1 order-lg-2" href="#">
                         <img src="https://ld-wp.template-help.com/wordpress_64763/wp-content/themes/freebook/assets/images/invert-logo.png" alt="FreeBook">
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
+                    
                 </nav>
             </div>
         </header>
@@ -38,7 +44,7 @@
         <section>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 d-none d-md-block text-center">
+                    <div class="col-md-6 d-none d-lg-block text-center">
                         <img src="./images/img1.webp" alt="book" class="float-end mt-5">
                     </div>
                     <div class="col-md-6" id="intro-sec">
@@ -68,22 +74,22 @@
     <section>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-3 light-boxes">
+                <div class="col-md-6 col-lg-3 light-boxes">
                     <h3 class="title-boxes" id="countdown-1">3</h3>
                     <span class="divider-2"></span>
                     <p class="text-boxes text-center">سال‌ها کار، با صدها مصاحبه با همکاران دیگر!</p>
                 </div>
-                <div class="col-md-3 dark-boxes">
+                <div class="col-md-6 col-lg-3 dark-boxes">
                     <h3 class="title-boxes" id="countdown-2">170000</h3>
                     <span class="divider-2"></span>
                     <p class="text-boxes text-center">دانلود کتاب های الکترونیکی در 12 ماه گذشته</p>
                 </div>
-                <div class="col-md-3 light-boxes">
+                <div class="col-md-6 col-lg-3 light-boxes">
                     <h3 class="title-boxes" id="countdown-3">86</h3>
                     <span class="divider-2"></span>
                     <p class="text-boxes text-center">کتاب های الکترونیکی برای کارآفرینان، صاحبان وب سایت و بازاریابان.</p>
                 </div>
-                <div class="col-md-3 dark-boxes">
+                <div class="col-md-6 col-lg-3 dark-boxes">
                     <h3 class="title-boxes" id="countdown-4">700</h3>
                     <span class="divider-2"></span>
                     <p class="text-boxes text-center">صفحات، همه با بینش ها و نکات زیادی برای کارآفرینان جوان تقویت شده است.</p>
@@ -151,25 +157,25 @@
                 </div>
             </div>
             <div class="row my-3">
-                <div class="col-md-3 d-flex gap-1 align-items-center flex-column">
+                <div class="col-md-6 col-lg-3 d-flex gap-1 align-items-center flex-column">
                     <a href="#">
                         <img src="./images/img2.jpg" alt="book">
                     </a>
                     <a href="#" class="book-name p-4">داستان سرایی که نه: چگونه داستان کسب و کار تعریف کنیم</a>
                 </div>
-                <div class="col-md-3 d-flex gap-1 align-items-center flex-column">
+                <div class="col-md-6 col-lg-3 d-flex gap-1 align-items-center flex-column">
                     <a href="#">
                         <img src="./images/img3.jpg" alt="book">
                     </a>
                     <a href="#" class="book-name p-4">20 ایده پست اینستاگرام برای غلبه بر بلوک خلاق</a>
                 </div>
-                <div class="col-md-3 d-flex gap-1 align-items-center flex-column">
+                <div class="col-md-6 col-lg-3 d-flex gap-1 align-items-center flex-column">
                     <a href="#">
                         <img src="./images/img4.jpg" alt="book">
                     </a>
                     <a href="#" class="book-name p-4">راه اندازی یک وب سایت در سال 2017: چه گزینه هایی دارید؟</a>
                 </div>
-                <div class="col-md-3 d-flex gap-1 align-items-center flex-column">
+                <div class="col-md-6 col-lg-3 d-flex gap-1 align-items-center flex-column">
                     <a href="#">
                         <img src="./images/img5.jpg" alt="book">
                     </a>
@@ -177,25 +183,25 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3 d-flex gap-1 align-items-center flex-column">
+                <div class="col-md-6 col-lg-3 d-flex gap-1 align-items-center flex-column">
                     <a href="#">
                         <img src="./images/img6.jpg" alt="book">
                     </a>
                     <a href="#" class="book-name p-4">هنر افزایش حضور شما در پینترست</a>
                 </div>
-                <div class="col-md-3 d-flex gap-1 align-items-center flex-column">
+                <div class="col-md-6 col-lg-3 d-flex gap-1 align-items-center flex-column">
                     <a href="#">
                         <img src="./images/img7.jpg" alt="book">
                     </a>
                     <a href="#" class="book-name p-4">نحوه استفاده از وردپرس برای تجارت الکترونیک</a>
                 </div>
-                <div class="col-md-3 d-flex gap-1 align-items-center flex-column">
+                <div class="col-md-6 col-lg-3 d-flex gap-1 align-items-center flex-column">
                     <a href="#">
                         <img src="./images/img8.jpg" alt="book">
                     </a>
                     <a href="#" class="book-name p-4">21 نکته آسان برای ایجاد یک کسب و کار قدرتمند</a>
                 </div>
-                <div class="col-md-3 d-flex gap-1 align-items-center flex-column">
+                <div class="col-md-6 col-lg-3 d-flex gap-1 align-items-center flex-column">
                     <a href="#">
                         <img src="./images/img9.jpg" alt="book">
                     </a>
@@ -203,25 +209,25 @@
                 </div>
             </div>
             <div class="row my-3">
-                <div class="col-md-3 d-flex gap-1 align-items-center flex-column">
+                <div class="col-md-6 col-lg-3 d-flex gap-1 align-items-center flex-column">
                     <a href="#">
                         <img src="./images/img10.jpg" alt="book">
                     </a>
                     <a href="#" class="book-name p-4">چگونه با وبلاگ طاقچه خود 1000 دلار در ماه درآمد کسب کنید؟</a>
                 </div>
-                <div class="col-md-3 d-flex gap-1 align-items-center flex-column">
+                <div class="col-md-6 col-lg-3 d-flex gap-1 align-items-center flex-column">
                     <a href="#">
                         <img src="./images/img11.jpg" alt="book">
                     </a>
                     <a href="#" class="book-name p-4">راه های رایگان برای رشد وب سایت: ایده های بودجه 0 دلاری</a>
                 </div>
-                <div class="col-md-3 d-flex gap-1 align-items-center flex-column">
+                <div class="col-md-6 col-lg-3 d-flex gap-1 align-items-center flex-column">
                     <a href="#">
                         <img src="./images/img12.jpg" alt="book">
                     </a>
                     <a href="#" class="book-name p-4">CMS اشتباه: چگونه آن را انتخاب نکنیم</a>
                 </div>
-                <div class="col-md-3 d-flex gap-1 align-items-center flex-column">
+                <div class="col-md-6 col-lg-3 d-flex gap-1 align-items-center flex-column">
                     <a href="#">
                         <img src="./images/img13.jpg" alt="book">
                     </a>
@@ -242,7 +248,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3 d-flex align-items-center flex-column gap-5 about-us-cards">
+                <div class="col-md-6 col-lg-3 d-flex align-items-center flex-column gap-5 about-us-cards">
                     <div>
                         <i class="fa fa-bookmark about-us-icons" aria-hidden="true"></i>
                     </div>
@@ -251,7 +257,7 @@
                         <p class="about-us-text">صاحبان شرکت های کوچک برای توسعه کسب و کار خود برای دستیابی به موفقیت به راهنماهای روشنی نیاز دارند.</p>
                     </div>
                 </div>
-                <div class="col-md-3 d-flex align-items-center flex-column gap-5 about-us-cards">
+                <div class="col-md-6 col-lg-3 d-flex align-items-center flex-column gap-5 about-us-cards">
                     <div>
                         <i class="fa fa-briefcase about-us-icons" aria-hidden="true"></i>
                     </div>
@@ -260,7 +266,7 @@
                         <p class="about-us-text">فناوری ها سریعتر از همیشه در حال توسعه هستند و شرکت ها باید از آنها پیروی کنند.</p>
                     </div>
                 </div>
-                <div class="col-md-3 d-flex align-items-center flex-column gap-5 about-us-cards">
+                <div class="col-md-6 col-lg-3 d-flex align-items-center flex-column gap-5 about-us-cards">
                     <div>
                         <i class="fa fa-users about-us-icons" aria-hidden="true"></i>
                     </div>
@@ -269,7 +275,7 @@
                         <p class="about-us-text">استارتاپ هایی که از ایده های خود الهام گرفته اند برای اجرای پروژه های خود به کمک نیاز دارند.</p>
                     </div>
                 </div>
-                <div class="col-md-3 d-flex align-items-center flex-column gap-5">
+                <div class="col-md-6 col-lg-3 d-flex align-items-center flex-column gap-5">
                     <div>
                         <i class="fa fa-user about-us-icons" aria-hidden="true"></i>
                     </div>
@@ -330,7 +336,7 @@
     <footer>
         <div class="container-fluid" id="whole-footer">
             <div class="row d-flex align-items-center justify-content-between" id="footer-part1">
-                <div class="col-md-6 order-2 order-md-1">
+                <div class="col-lg-6 order-2 order-lg-1">
                     <div>
                         <h6 class="mb-4" id="input-text">وبلاگ کسب و کار من را دنبال کنید</h6>
                         <div class="d-flex align-items-center gap-2">
@@ -339,7 +345,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 order-1 order-md-2 text-end">
+                <div class="col-lg-6 order-1 order-lg-2 text-lg-end" id="footer-logo">
                     <div>
                         <img src="./logo/invert-logo.webp" alt="logo">
                     </div>
