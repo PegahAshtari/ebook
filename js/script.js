@@ -22,10 +22,12 @@
 
 window.onscroll = function () {
     let scrollToTopBtn = document.getElementById("scrollToTop");
+
     if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-        scrollToTopBtn.style.display = "block";
+        scrollToTopBtn.classList.add("visible");
+
     } else {
-        scrollToTopBtn.style.display = "none";
+        scrollToTopBtn.classList.remove("visible");
     }
 };
 
