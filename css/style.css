@@ -342,7 +342,23 @@ input:active {
     }
 
     #ham-menu {
-        background-color: #ff4500;
+        color: #121212;
+        font-size: 18px;
+    }
+
+    #ham-menu:hover {
+        color: #ff4500;
+        transition: all 0.4s ease-in-out;
+    }
+
+    #search-icon {
+        color: rgb(200, 200, 200);
+        font-size: 18px;
+    }
+
+    #search-icon:hover {
+        color: #ff4500;
+        transition: all 0.4s ease-in-out;
     }
 
     .navbar-brand {
