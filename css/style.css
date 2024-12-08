@@ -198,9 +198,9 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .accordion-button::after {
     display: none;
-  }
-  
-  .accordion-button {
+}
+
+.accordion-button {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -209,21 +209,36 @@ p, h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
     padding: 1.5rem;
     color: #ff5607;
-  }
-  
-  .accordion-button::before {
+}
+
+.accordion-button::before {
     content: "+";
     font-size: 40px;
     transition: transform 0.4s ease;
     color: #00bbd0;
     font-weight: lighter;
-  }
-  
-  .accordion-button:not(.collapsed)::before {
+}
+
+.accordion-button:not(.collapsed)::before {
     content: "-";
     font-size: 40px;
     transition: transform 0.4s ease;
-  }
+}
+
+#ninth-section {
+    background-image: url(../images/bgi5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 50px 60px 0;
+}
+
+#ninth-section-heading {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 1.35;
+}
 
 footer {
     background-color: #131313;
