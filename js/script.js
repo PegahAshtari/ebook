@@ -20,6 +20,23 @@
 // };
 
 
+window.onload = function () {
+    document.querySelectorAll('.counter-target').forEach(element => {
+        let currentNumber = element.innerHTML;
+        const targetNumber = element.getAttribute('data-target');
+        const speed = element.getAttribute('data-speed') || 0.5;
+        const interval = setInterval(() => {
+            if (currentNumber < targetNumber) {
+                currentNumber++;
+                element.textContent = currentNumber;
+            } else {
+                clearInterval(interval);
+            }
+        }, speed);
+    });
+};
+
+
 window.onscroll = function () {
     let scrollToTopBtn = document.getElementById("scrollToTop");
 
